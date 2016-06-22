@@ -1,5 +1,41 @@
+@media screen and (max-width: 1000px;){
+.create, .local{
+  width: 50%;
+}
+.branch{
+  100%;
+}
+
+}
+
+/*end of query*/
+
+.create {
+
+
+}
+
+.local{
+
+  position: absolute;
+  top:90px;
+  right:490px;
+
+}
+.branch{
+
+  position:absolute;
+  top: 90px;
+  right: 40px;
+}
+.update{
+
+  margin-top: 50px;
+}
+
 body{
-background:#EFF5FB;
+  background:#EFF5FB;
+
 
 }
 h1 {
@@ -11,14 +47,18 @@ h3{
   background: black;
   color:white;
   border:1px solid;
-  width: 400px;
+  width: 300px;
   text-align: center;
 }
 dt{
   font-size: 20px;
+  width: 350px;
 }
 dd{
   font-size: 20px;
   background: #CEF6EC;
-  width: 350px;
+  width:350px;
+}
+dl{
+
 }

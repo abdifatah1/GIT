@@ -2,20 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css"
+    <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8">
     <title>Git Cheat Sheet</title>
   </head>
   <body>
     <h1>Git Cheat Sheet!</h1>
-    <h3>CREATE</h3>
-    <dl>
+    <div id="container">
+    <dl class="create">
+      <h3>CREATE</h3>
       <dt>clone an existing repository:</dt>
       <dd>$git clone ssh://user@domain.com/repo.git</dd>
       <dt>create a new local repository:</dt>
       <dd>$ git init</dd>
     </dl>
-    <h3>LOCAL CHANGES</h3>
-    <dl>
+
+    <dl class="local">
+      <h3>LOCAL CHANGES</h3>
       <dt>Changed files in your working directory</dt>
       <dd>$ git status</dd>
       <dt>Changes to tracked files</dt>
@@ -31,15 +34,50 @@
       <dt>Change the last commit </dt>
       <dd>$ commit --amend</dd>
     </dl>
-    <h3>COMMIT HISTROY</h3>
-    <dl>
-      <dd>Show ll commits,starting with newest</dd>
-      <dt>$ git log</dt>
-      <dd>Show changes over time for a specific file</dd>
-      <dt>$ git log -p <file></dt>
-      <dd>Who changed and when in <file></dd>
-      <dt>$ git blame <file></dt>
-    </dl>
 
+    <dl class="commit">
+      <h3>COMMIT HISTROY</h3>
+      <dt>Show ll commits,starting with newest</dt>
+      <dd>$ git log</dd>
+      <dt>Show changes over time for a specific file</dt>
+      <dd>$ git log -p <file></dd>
+      <dt>Who changed and when in <file></dt>
+      <dd>$ git blame <file></dd>
+    </dl>
+    <dl class="branch">
+      <h3>BRANCHES & TAGS</h3>
+      <dt>List all existing branches</dd>
+      <dd>$ git branch -av</dt>
+      <dt>Switch HEAD branch</dd>
+      <dd>$ git checkout branch</dt>
+      <dt>Create a new branch base on your current HEAD</dd>
+      <dd>$ git branch new-branch</dt>
+      <dt>create a new tracking branch based on a remote branch</dd>
+      <dd>$ git checkout --track <remote/bran-ch></dt>
+      <dt>Delete a local branch</dd>
+      <dd>git branch -d b ranch</dt>
+      <dt>Mark the current commit with a tag</dd>
+      <dd>$ git tag tag-name</dt>
+    </dl>
+    <dl class="update">
+      <h3>UPDATE & PUBLISH</h3>
+      <dt>List all currently configured remotes</dt>
+      <dd>$ git remote -v</dd>
+      <dt>Show information about a remote</dt>
+      <dd>$ git remote show remote</dd>
+      <dt>Add new remote repository,named remote</dt>
+      <dd>$ git remote add shortname url</dd>
+      <dt>Download all changes from remote but don't integrate into HEAD</dt>
+      <dd>$ git fetch remote</dd>
+      <dt>Download changes and directly merge/integrate into HEAD</dt>
+      <dd>$ git pull remote branch</dd>
+      <dt>publish local changes on a remote</dt>
+      <dd>$ git push remote branch</dd>
+      <dt>Delete a branch on the remote</dt>
+      <dd>$ git branch -dr remote/branch</dd>
+      <dt>publish your tags</dt>
+      <dd>$ git push --tags</dd>
+    </dl>
+  </div>
   </body>
 </html>
