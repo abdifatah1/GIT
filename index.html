@@ -7,11 +7,31 @@
   </head>
   <body>
     <h1>Git Cheat Sheet!</h1>
-    <h3>Create</h3>
+    <h3>CREATE</h3>
     <dl>
-      <dt>clone an existing repository</dt>
-      <dd>$git clone ssh:/user@domain>com/repo.git</dd>
-    </ul>
+      <dt>clone an existing repository:</dt>
+      <dd>$git clone ssh://user@domain.com/repo.git</dd>
+      <dt>create a new local repository:</dt>
+      <dd>$ git init</dd>
+    </dl>
+    <h3>LOCAL CHANGES</h3>
+    <dl>
+      <dt>Changed files in your working directory</dt>
+      <dd>$ git status</dd>
+      <dt>Changes to tracked files</dt>
+      <dd>$ git diff</dd>
+      <dt>add all current changes to the next commit</dt>
+      <dd>$ git add</dd>
+      <dt>Add some changes in <file>to the next commit</dt>
+      <dd>$ git add -p <file></dd>
+      <dt>Commit all local changes in tracked files</dt>
+      <dd>$ git commit -a</dd>
+      <dt>Commit previosly staged changes</dt>
+      <dd>$ git commit </dd>
+      <dt>Change the last commit </dt>
+      <dd>$ commit --amend</dd>
+
+    </dl>
 
   </body>
 </html>
