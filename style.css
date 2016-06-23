@@ -1,33 +1,20 @@
-@media screen and (max-width: 1000px;){
-.create, .local{
-  width: 50%;
-}
-.branch{
-  100%;
-}
-
-}
 
 /*end of query*/
-
-.create {
-
-
-}
 
 .local{
 
   position: absolute;
   top:90px;
   right:490px;
-
 }
-.branch{
+.branch {
 
-  position:absolute;
+  position: absolute;
   top: 90px;
   right: 40px;
 }
+
+
 .update{
 
   margin-top: 50px;
