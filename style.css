@@ -2,7 +2,7 @@
 
 body{
   background:#EFF5FB;
-  width:1000px;
+
 }
 h1 {
   margin-left: 35%;
@@ -69,11 +69,81 @@ dl{
   margin-left: 10%;
 }
 
-@media screen and (max-width:920px) {
-  h1{
-    margin-left: 10%
+@media screen and (max-width:1142px) {
+  h1 {
+    margin-left: 25%;
 
+    text-decoration: underline;
+    font-size: 40px;
+
+  }
+  h3{
+    background: black;
+    color:white;
+    border:1px solid;
+    width: 50%;
+    text-align: center;
+  }
+  dt{
+    font-size: 20px;
+    width: 50%;
+  }
+  dd{
+    font-size: 20px;
+    background: #CEF6EC;
+    width:50%;
+  }
+  dl{
+
+  }
+
+  .local{
+    width:50%;
+    position: absolute;
+    top:15%;
+    left:50%;
+
+  }
+  .branch {
+    width: 50%;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+
+  }
+  .create {
+
+    width:50%;
+    position: absolute;
+    top:15%;
+    left:5%;
+    margin-left: 10%;
+    }
+    .commit{
+      width:50%;
+      position: absolute;
+      top:60%;
+      left:5%;
+      margin-left: 10%;
+    }
+
+  .update{
+    width:50%;
+    position: absolute;
+    top:110%;
+    left:5%;
+    margin-left: 10%;
   }
 
 
   }
+  @media screen and (max-width:840px) {
+    .local, .branch, .create, .commit, .update{
+      position: static;
+      width: 100%;
+      margin-left: 25%;
+
+    }
+
+
+    }
