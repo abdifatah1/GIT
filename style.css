@@ -4,6 +4,8 @@ body{
   background:#EFF5FB;
 
 }
+
+  /*header*/
 h1 {
   margin-left: 35%;
 
@@ -11,6 +13,7 @@ h1 {
   font-size: 50px;
 
 }
+
 h3{
   background: black;
   color:white;
@@ -18,19 +21,24 @@ h3{
   width: 50%;
   text-align: center;
 }
+
+      /*dt dl*/
 dt{
   font-size: 20px;
   width: 50%;
 }
+
 dd{
   font-size: 20px;
   background: #CEF6EC;
   width:50%;
 }
+
 dl{
 
 }
 
+          /*local*/
 .local{
   width:50%;
   position: absolute;
@@ -38,6 +46,8 @@ dl{
   left:50%;
 
 }
+
+        /*branch*/
 .branch {
   width: 50%;
   position: absolute;
@@ -45,6 +55,8 @@ dl{
   left: 50%;
 
 }
+
+        /*create*/
 .create {
 
   width:50%;
@@ -53,6 +65,8 @@ dl{
   left:5%;
   margin-left: 10%;
   }
+
+      /*commit*/
   .commit{
     width:50%;
     position: absolute;
@@ -61,6 +75,7 @@ dl{
     margin-left: 10%;
   }
 
+    /*update*/
 .update{
   width:50%;
   position: absolute;
@@ -69,6 +84,7 @@ dl{
   margin-left: 10%;
 }
 
+     /*media query starts here*/
 @media screen and (max-width:1142px) {
   h1 {
     margin-left: 25%;
@@ -77,6 +93,7 @@ dl{
     font-size: 40px;
 
   }
+
   h3{
     background: black;
     color:white;
@@ -84,15 +101,18 @@ dl{
     width: 50%;
     text-align: center;
   }
+
   dt{
     font-size: 20px;
     width: 50%;
   }
+
   dd{
     font-size: 20px;
     background: #CEF6EC;
     width:50%;
   }
+
   dl{
 
   }
@@ -104,6 +124,7 @@ dl{
     left:50%;
 
   }
+
   .branch {
     width: 50%;
     position: absolute;
@@ -111,6 +132,7 @@ dl{
     left: 50%;
 
   }
+
   .create {
 
     width:50%;
@@ -119,6 +141,7 @@ dl{
     left:5%;
     margin-left: 10%;
     }
+
     .commit{
       width:50%;
       position: absolute;
@@ -137,7 +160,8 @@ dl{
 
 
   }
-  @media screen and (max-width:840px) {
+  /*another media query starts here*/
+@media screen and (max-width:840px) {
     .local, .branch, .create, .commit, .update{
       position: static;
       width: 100%;
